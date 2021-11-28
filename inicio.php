@@ -31,7 +31,7 @@ include "header.php";
 					                    $consulta2 = "SELECT * FROM urls where base = ".$columna['b_id']." and  activo=1";
 					                        $resultado2 = mysqli_query( $conexion, $consulta2 ) or die ( "Algo ha ido mal en la consulta a la base de datos (url)");
 					                        $cantidad = mysqli_num_rows($resultado2);                       
-					                        echo "<td rowspan = ".$cantidad.">".$columna['b_nombre']."</td>";
+					                        echo "<td rowspan = ".$cantidad."><strong>".$columna['b_nombre']."</strong></td>";
 					                       // echo "<td rowspan = ".$cantidad."><img class='mycenter' alt='140x140' src='images/".$columna['imagen']."'></td>";
 					                        while($columna2 = mysqli_fetch_array( $resultado2 )) 
 					                        { 

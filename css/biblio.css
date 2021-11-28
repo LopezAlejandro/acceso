@@ -1,0 +1,222 @@
+@import url('./Alegreya Sans.css');
+
+body {
+    font-size: 1.1em;
+    font-family: 'Alegreya Sans';
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Alegreya Sans';
+    }
+    
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}    
+    
+.text-left {
+  font-family: 'Alegreya Sans';
+  
+}
+
+.text-right {
+  font-family: 'Alegreya Sans';
+  
+}
+    
+.dis-none{
+    display: none;
+}
+.spacer { 
+	margin:0; padding:0; height:50px; 
+}
+
+.spacer-black { 
+	margin:0; padding:0; height:25px; 
+	background: black;
+}
+
+.encabezado h3 strong {
+color: #E4DABF;
+font-size: 1.75rem;
+}
+
+p.preludio {
+	 font-family: 'Alegreya Sans';
+    font-size: 1.1rem;    
+    line-height: 1.333333334;
+    text-align: justify;
+    border:2px solid #e6e6e6;
+    padding:5px;
+}
+
+p.preludio-a {
+	 font-family: 'Alegreya Sans';
+    font-size: 1.0rem;    
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-style: italic;
+}
+
+
+
+.one-columns {
+    
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+    
+    column-width: 140px;
+}
+
+.two-columns {
+    
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+    
+    column-width: 140px;
+}
+
+.titulo_boton {
+  float:left; 
+  padding:5px;  
+  background-color:#e6e6e6;
+  width:400px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:bold;
+}
+.boton_mostrar {
+  float:right;
+  font-size:12px;
+  line-height:20px;
+  color:#DE7217;
+}
+#contenido{
+  float:left;
+  clear:both;
+  border:2px solid #e6e6e6;
+  margin-top:2px;
+  padding:5px;
+  width:396px;
+  overflow:auto;
+  font-family:helvetica;
+  font-size:14px;
+  text-align: justify;
+}
+
+#mi-super-contenido { 
+	display:none;
+ }
+ 
+ .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+   background-color: #F4EFE2;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th {
+   background-color: #E5DABE;
+}
+
+.table-striped > thead {
+	background-color: #E5DABE;
+}
+
+.zoom {      
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+/**adjust scale to desired size, 
+add browser prefixes**/
+-ms-transform: scale(2.5);    
+-moz-transform: scale(2.5);  
+-webkit-transform: scale(2.5);  
+-o-transform: scale(2.5);  
+transform: scale(2.5);    
+position:relative;      
+z-index:100;  
+}
+
+.table thead th {
+	border-bottom: 2px solid #F4EFE2;
+}
+
+
+.table-bordered td, .table-bordered th {
+border: 1px ;
+border-style: solid;
+border-color: #F4EFE2;
+} 
+
+table.table.table-striped.table-bordered tbody tr td a {
+	color: grey;
+}
+
+table.table.table-striped.table-bordered tbody tr td a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#fondo{
+	min-height: 200px;
+	background-image: url(../images/fondo.png);
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center;
+	}
+
+.page-link {
+	color: #020910;
+}
+
+.page-link:hover {
+	z-index: 2;
+	color: #020910;
+	text-decoration: none;
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+}
+
+.mycenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
