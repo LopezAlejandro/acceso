@@ -4,7 +4,8 @@ include "header.php";
 
 	<div class="ml-5">
 		<?php
-                echo "<h1><strong>".$columna3['tipo_acceso']."</strong></h1>";
+                echo "<h1>".$columna3['tipo_acceso']."</h1>";
+                echo "<h6>".$columna3['ta_leyenda']."</h6>";
       ?> 
 	</div>
 	<div class="container-fluid">

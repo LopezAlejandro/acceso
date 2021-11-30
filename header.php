@@ -27,7 +27,7 @@
    $total_rows = mysqli_fetch_array($result);
    $total_pages = ceil($total_rows[0] / $no_of_records_per_page);
   
-   $consulta = "SELECT * FROM bases where activo=1 and t_ac=$ano LIMIT $offset , $no_of_records_per_page";
+   $consulta = "SELECT * FROM bases where activo=1 and t_ac=$ano order by b_nombre LIMIT $offset , $no_of_records_per_page";
 	$resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos (select)");
 	
 	$consulta3 = "SELECT * FROM tipo_acceso where ta_id=$ano and activo=1 LIMIT 1";
@@ -70,9 +70,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                		<!--<a class="nav-item nav-link" href="introduccion.php">Introducci&oacute;n</a>-->
-                  	<!--<a class="nav-item nav-link" href="inicio.php?pageno=1">Indice General</a>-->
-                    
+                		<a class="nav-item nav-link" href="inicio.php?f=1">Sisbi</a>
+                		<a class="nav-item nav-link" href="inicio.php?f=2">MINCyT</a>
+                		<a class="nav-item nav-link" href="inicio.php?f=3">Bases de datos académicas de acceso abierto</a>
+                		<a class="nav-item nav-link" href="inicio.php?f=4">Enlaces de interés de acceso abierto</a>
                 </div>
             </div>
         </nav>
