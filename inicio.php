@@ -11,7 +11,7 @@ include "header.php";
 	<div class="container-fluid">
 		
 			<div class="row row-cols-1 row-cols-md-3">
-				<div class="col-8 ml-0"> 
+				<div class="col-7 ml-4"> 
 					<?php 
 					        echo "<div class='table-responsive'>"; 
 					        echo "<table class='table table-striped table-bordered'>";
